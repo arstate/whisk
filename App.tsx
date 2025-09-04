@@ -77,7 +77,8 @@ const App: React.FC = () => {
             title="Project Whisk Embedded Content"
             className={`w-full h-full border-0 transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
             onLoad={handleLoad}
-            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox allow-modals"
+            allow="publickey-credentials-get *; clipboard-write *; credential-management"
           />
         </div>
       </main>
